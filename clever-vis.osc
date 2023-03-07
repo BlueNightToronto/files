@@ -875,7 +875,29 @@
 
 		l0 5 =
 			{if}
-				(L.L.clever_int_dest) 2 (M.V.GetTerminusString) (S.$.clever_LED)
+				"" (L.S.Time)
+				(L.S.Time) 46800 <
+					{if}
+						(L.S.Time) 3600 <
+							{if}
+								(L.S.Time) 3600 / 12 + s0 trunc s1 "02" $IntToStrEnh $+ ":" $+ 
+								l0 l1 - 60 * s0 trunc s1 "02" $IntToStrEnh $+ " AM" $+
+							{else}
+								(L.S.Time) 43200 >
+								{if}
+									(L.S.Time) 3600 / s0 trunc s1 "02" $IntToStrEnh $+ ":" $+ 
+									l0 l1 - 60 * s0 trunc s1 "02" $IntToStrEnh $+ " PM" $+
+								{else}
+									(L.S.Time) 3600 / s0 trunc s1 "02" $IntToStrEnh $+ ":" $+ 
+									l0 l1 - 60 * s0 trunc s1 "02" $IntToStrEnh $+ " AM" $+
+								{endif}
+							{endif}
+					{else}
+						(L.S.Time) 43200 - 3600 / s0 trunc s1 "02" $IntToStrEnh $+ ":" $+ 
+						l0 l1 - 60 * s0 trunc s1 "02" $IntToStrEnh $+ " PM" $+
+					{endif}
+				
+				(S.$.clever_LED)
 			{endif}	
 			
 			
