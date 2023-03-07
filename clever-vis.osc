@@ -909,6 +909,9 @@
 		(L.L.clever_LED_time) (C.L.display_change_sec) >
 			{if}
 
+				"" (S.$.clever_LED)
+
+
 					(L.L.clever_LED_time) (C.L.display_change_sec) - (C.L.display_black_sec) >
 						{if}
 							(L.L.clever_LED_mode) s0
@@ -917,9 +920,9 @@
 								{if}
 									(L.L.clever_run_active)
 									{if}
-										(L.L.ext_announce_seq) 3 =
+										(L.L. haltewunschlampe) =
 										{if}
-											4 (S.L.clever_LED_mode)
+											1 (S.L.clever_LED_mode)
 										{else}
 											2 (S.L.clever_LED_mode)
 										{endif}
