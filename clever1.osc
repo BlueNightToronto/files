@@ -795,7 +795,7 @@
 										{if}
 											4 (S.L.clever_LED_mode)
 										{else}
-											5 (S.L.clever_LED_mode)
+											4 (S.L.clever_LED_mode)
 										{endif}
 									{endif}
 								{endif}
@@ -829,7 +829,7 @@
 										{if}
 											4 (S.L.clever_LED_mode)
 										{else}
-											5 (S.L.clever_LED_mode)
+											4 (S.L.clever_LED_mode)
 										{endif}
 									{else}
 									0 (S.L.clever_LED_mode)
@@ -860,15 +860,11 @@
 								{if}
 									(L.L.clever_run_active)
 									{if}
-										(L.L.ext_announce_trig) 3 =
+										(L.L.ext_announce_seq) 3 =
 										{if}
-											(C.L.display_black_sec) 0.2 < 
-												{if}
-												{else}
-													4 (S.L.clever_LED_mode)
-												{endif}
+											4 (S.L.clever_LED_mode)
 										{else}
-											5 (S.L.clever_LED_mode)
+											4 (S.L.clever_LED_mode)
 										{endif}
 									{else}
 									0 (S.L.clever_LED_mode)
