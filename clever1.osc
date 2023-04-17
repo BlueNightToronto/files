@@ -791,7 +791,7 @@
 								{if}
 									(L.L.clever_run_active)
 									{if}
-										(L.L.ext_announce_trig) 3 =
+										(L.L.ext_announce_seq) 3 =
 										{if}
 											4 (S.L.clever_LED_mode)
 										{else}
@@ -825,7 +825,7 @@
 								{if}
 									(L.L.clever_run_active)
 									{if}
-										(L.L.ext_announce_trig) 3 =
+										(L.L.ext_announce_seq) 3 =
 										{if}
 											4 (S.L.clever_LED_mode)
 										{else}
@@ -841,7 +841,7 @@
 								{if}
 									(L.L.clever_run_active)
 									{if}
-										(L.L.ext_announce_trig) 3 =
+										(L.L.ext_announce_seq) 3 =
 										{if}
 											(C.L.display_black_sec) 0.2 < 
 												{if}
