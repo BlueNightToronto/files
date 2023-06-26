@@ -1,5 +1,5 @@
 **************************************************
-Constfile für das Allison World B400R6 Getriebe
+Constfile fÃ¼r das Allison World B400R6 Getriebe
 Constfile for the Allison World B400R6 gearbox
 **************************************************
 
@@ -13,7 +13,7 @@ LBSS_enabled
 0
 
 ###############################
-Legt fest, welche Gänge hydrodynamisch arbeiten.
+Legt fest, welche GÃ¤nge hydrodynamisch arbeiten.
 How many gears work as a torque converter.
 2 Minimum
 ###############################
@@ -31,8 +31,8 @@ kickdown_enable
 1
 
 ###############################
-Aktiviert eine Drehmomentsperre in den ausgewählten Gängen, um Schlupf im Getriebe sowie Rädern zu verhindern.
-Dies ist absolut nötig bei Motoren mit hohen Drehmomenten.
+Aktiviert eine Drehmomentsperre in den ausgewÃ¤hlten GÃ¤ngen, um Schlupf im Getriebe sowie RÃ¤dern zu verhindern.
+Dies ist absolut nÃ¶tig bei Motoren mit hohen Drehmomenten.
 This activates a torque limiter to prevent slipping gears/wheels.
 This is necessary, if the engine has a high amount of torque.
 ###############################
@@ -43,26 +43,26 @@ engine_drehmomentsperre
 
 ###############################
 Hier wird festgelegt, wie stark die Sperre greifen soll. 0 - 1 (0% - 100% vom Eingangsdrehmoment)
-Wandlergänge werden nicht berücksichtigt.
+WandlergÃ¤nge werden nicht berÃ¼cksichtigt.
 Here you can select the amount of torque limit for each gear. 0 - 1 ( 0% - 100% of the engine's maximum torque output)
 Torque converting gears are excluded.
 ###############################
 
 [const]
 sperrwirkung_g1_fest
-1
+0.6
 
 [const]
 sperrwirkung_g2_fest
-1
+0.7
 
 [const]
 sperrwirkung_g3_fest
-0.9
+0.8
 
 [const]
 sperrwirkung_g4_fest
-1
+0.9
 
 [const]
 sperrwirkung_g5_fest
@@ -73,7 +73,7 @@ sperrwirkung_g6_fest
 1
 
 ###############################
-Schaltkraftglättung
+SchaltkraftglÃ¤ttung
 Smooth shifts.
 ###############################
 [newcurve]
@@ -99,7 +99,7 @@ downshift_smoothing
 1
 
 ###############################
-Zeit für den Wechsel zwischen Retarder und Traktion.
+Zeit fÃ¼r den Wechsel zwischen Retarder und Traktion.
 Time to change from retarder to traction.
 ###############################
 [const]
@@ -131,7 +131,7 @@ antrieb_neutral_brakepressure
 200000
 
 ###############################
-Zeit zwischen Erfüllen der Bedingungen zur Neutralschaltung und tatsächlichem Auskuppeln.
+Zeit zwischen ErfÃ¼llen der Bedingungen zur Neutralschaltung und tatsÃ¤chlichem Auskuppeln.
 Delay for actual NBS engage.
 ###############################
 [const]
@@ -159,7 +159,7 @@ antrieb_kuppl_M_dn_min
 700
 
 ###############################
-Übersetzungen der einzelnen Gänge
+Ãœbersetzungen der einzelnen GÃ¤nge
 Gear ratios.
 ###############################
 [const]
@@ -187,7 +187,7 @@ antrieb_getr_ratio6
 0.65
 
 ###############################
-Übersetzung des Antriebsdifferentials.
+Ãœbersetzung des Antriebsdifferentials.
 Final drive ratio.
 ###############################
 [const]
@@ -339,7 +339,7 @@ antrieb_wandler_fillrate
 1400
 
 ###############################
-Mindesteinschaltgeschwindigkeit für Retarder.
+Mindesteinschaltgeschwindigkeit fÃ¼r Retarder.
 Retarder minimum engage speed.
 ###############################
 [const]
@@ -347,7 +347,7 @@ retarder_min_einschaltspeed
 10
 
 ###############################
-Retardereinschaltverzögerung.
+RetardereinschaltverzÃ¶gerung.
 Retarder engage delay.
 ###############################
 [const]
@@ -422,7 +422,7 @@ retarder_stufe4
 1600
 
 ###############################
-Zeit für das Einlegen eines Ganges.
+Zeit fÃ¼r das Einlegen eines Ganges.
 Delay to engage a gear.
 ###############################
 [const]
@@ -430,7 +430,7 @@ antrieb_gangwahlzeit
 1
 
 ###############################
-Zeit für das Neutralschalten
+Zeit fÃ¼r das Neutralschalten
 Delay to disengage a gear.
 ###############################
 [const]
