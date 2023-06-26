@@ -344,7 +344,7 @@ Retarder minimum engage speed.
 ###############################
 [const]
 retarder_min_einschaltspeed
-10
+302
 
 ###############################
 Retardereinschaltverzögerung.
