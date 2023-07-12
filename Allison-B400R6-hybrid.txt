@@ -206,7 +206,7 @@ Gear 1
 
 [const]
 antrieb_getr_autoSwUpMaxSpd1
-403.0659026
+403
 
 [const]
 antrieb_getr_autoSwUpkickdnSpd1
