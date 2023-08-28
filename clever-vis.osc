@@ -863,7 +863,7 @@
 		
 		l0 4 =
 			{if}
-			(L.L.clever_int_dest) 8 < 
+			(C.L.display_blank_sec) 5 < 
 			{if}
 				(L.L.clever_int_dest) 0 (M.V.GetTerminusString) (S.$.clever_LED)
 			{else}
@@ -936,7 +936,7 @@
 									{if}
 										(L.L.scroll) =
 										{if}
-											5 (S.L.clever_LED_mode)
+											4 (S.L.clever_LED_mode)
 										{else}
 										(L.L.clever_stop) (M.V.GetTTBusstopName) (M.V.GetBusstopIndex) 2 (M.V.GetBusstopString) "" $=
 											{if}
@@ -972,7 +972,7 @@
 									{if}
 										(L.L.scroll) =
 										{if}
-											(L.L.clever_int_dest) 8 < 
+											(C.L.display_blank_sec) 5 < 
 												{if}
 												{else}
 													5 (S.L.clever_LED_mode)
