@@ -936,7 +936,7 @@
 									{if}
 										(L.L.scroll) =
 										{if}
-											4 (S.L.clever_LED_mode)
+											5 (S.L.clever_LED_mode)
 										{else}
 										(L.L.clever_stop) (M.V.GetTTBusstopName) (M.V.GetBusstopIndex) 2 (M.V.GetBusstopString) "" $=
 											{if}
