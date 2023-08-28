@@ -316,7 +316,7 @@
 	
 	(L.L.clever_screen) 11 =
 		{if}
-			"FUCK YOU" (S.$.Matrix_PR1) "" (S.$.Matrix_PR2)
+			"EXPRESS NETWORK" (S.$.Matrix_PR1) "" (S.$.Matrix_PR2)
 		{endif}	
 {end}
 
@@ -865,9 +865,9 @@
 			{if}
 			(C.L.display_blank_sec) 5 < 
 			{if}
-				(L.L.clever_int_dest) 0 (M.V.GetTerminusString) (S.$.clever_LED)
+				5 (S.L.clever_LED_mode) (S.$.clever_LED)
 			{else}
-				(L.L.clever_int_dest) 7 (M.V.GetTerminusString) (S.$.clever_LED)
+				0 (S.L.clever_LED_mode) (S.$.clever_LED)
 				
 			{endif}	
 			
