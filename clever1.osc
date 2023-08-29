@@ -531,8 +531,10 @@
 						
 					(L.L.door_0) 0 = (L.L.door_2) 0 = &&
 					(L.L.Velocity) 1 >= &&
+					(C.L.display_blank_sec)
 					(L.L.clever_stop_display) (L.L.clever_stop) <= (L.L.clever_stop_display) (M.V.GetTTBusstopName) (M.V.GetBusstopIndex) 1 (M.V.GetBusstopString) (L.L.clever_stop) 1 + (M.V.GetTTBusstopName) (M.V.GetBusstopIndex) 1 (M.V.GetBusstopString) $= ! || &&
 					(L.L.announce_pre_time) ! &&
+					(C.L.display_change_sec)
 					(L.L.clever_LED_mode) 2 >= ! &&
 					(L.L.clever_stop_display_fwd) 1 = &&
 						{if}
