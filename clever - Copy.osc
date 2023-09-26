@@ -1251,6 +1251,46 @@
 
 			{endif}	
 
+'		11 =  JOHNS DELAY WARNING			
+		l0 11 =
+			{if}
+			(L.L.clever_init_run) !
+				{if}
+				(L.L.clever_timer) (L.S.Timegap) + (S.L.clever_timer) 
+					15 >
+						{if} 
+							(L.L.clever_prev_screen) (S.L.clever_screen)
+							0 (S.L.clever_timer)
+							11 (S.L.clever_prev_screen)
+							(T.L.ev_clever_key_confirm)
+						{endif}
+				{endif}
+			0 (S.L.clever_vis_runlinedest) (S.L.clever_vis_log) (S.L.clever_vis_rt)
+			"WARNING - EXCESSIVE DELAY" (S.$.clever_upline)
+			"DRIVE FASTER!" (S.$.clever_midline)
+			"" (S.$.clever_lowline)	
+			{endif}		
+	
+' ######### delay ##########
+
+		(M.V.GetTTDelay) 300 <
+			{if}
+			(L.L.clever_init_run) ! (L.L.clever_finalstop) ! &&
+				{if}
+					(L.L.clever_timer) (L.S.Timegap) + (S.L.clever_timer) 
+					60 >
+						{if}
+							(L.L.schedule_active)
+							{if}
+								11 (S.L.clever_screen)				
+								4 (S.L.clever_prev_screen)
+								(T.L.ev_clever_key_confirm)
+							{endif}
+						{endif}
+					0 (S.L.clever_timer)
+				{endif}
+			{endif}
+
 ' ######### WENN EINGELOGGT ##########		
 		(L.L.clever_logged_in)
 			{if}		
@@ -1336,6 +1376,27 @@
 								1 (S.L.clever_S_tex)
 							{endif}
 					{endif}				
+		{endif}
+		
+'	DEBUG
+
+	(L.L.clever_run_active) !
+		{if}
+			0 (S.L.clever_stop) (S.L.clever_laststop) (S.L.clever_stopno)
+			(T.L.system_paused)
+		{endif}
+		
+	(L.$.Matrix_TerminusL3) $length
+	(L.$.Matrix_TerminusL4) $length + 0 >
+		{if}
+			1 (S.L.matrix_flip)
+		{else}
+			0 (S.L.matrix_flip) (S.L.matrix_page)
+		{endif}
+		
+	(L.L.clever_stop_display) (M.V.GetTTBusstopIndex) 1 + >
+		{if}
+			(M.V.GetTTBusstopIndex) (S.L.clever_stop_display) 
 		{endif}
 		
 {end}
