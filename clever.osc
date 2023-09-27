@@ -571,6 +571,7 @@
 					(L.L.Velocity) 1 <
 					(L.L.door_0) 0 > (L.L.door_2) 0 > || &&
 					(L.L.announce_pre_time) (L.L.clever_stop_display) (L.L.clever_stop) < && ||
+					(L.L.clever_LED_mode) 4 >= ! &&
 						{if}
 							1 (S.L.clever_stop_display_fwd)
 						{endif}
@@ -797,19 +798,12 @@
 		
 		l0 4 =
 			{if}
-			(L.L.clever_int_dest) 8 < 
-			{if}
-				(L.L.clever_int_dest) 0 (M.V.GetTerminusString) (S.$.clever_LED)
-			{else}
-				(L.L.clever_int_dest) 7 (M.V.GetTerminusString) (S.$.clever_LED)
-				
-			{endif}	
-			
+				(C.L.display_black_sec) (S.$.clever_LED)
 			{endif}
 
 		l0 5 =
 			{if}
-				(L.L.clever_int_dest) 2 (M.V.GetTerminusString) (S.$.clever_LED)
+				(C.L.display_change_sec) (S.$.clever_LED)
 			{endif}	
 			
 			
