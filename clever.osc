@@ -341,7 +341,6 @@
 	
 	(L.L.clever_screen) 9 <=
 		{if}
-			1 (S.L.clever_LED_malf)
 			4 (S.L.clever_LED_mode)
 		{endif}	
 	(T.L.ev_clever_key)		
@@ -489,6 +488,7 @@
 		
 	(L.L.globaltimer) (L.L.announce_info_wait) 19 + >
 		{if}
+			(M.L.clever_LED)
 			0 (S.L.announce_info_wait)
 		{endif}
 
