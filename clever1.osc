@@ -297,7 +297,6 @@
 	
 	(L.L.clever_screen) 9 <=
 		{if}
-			1 (S.L.clever_LED_malf)
 			4 (S.L.clever_LED_mode)
 		{endif}	
 	(T.L.ev_clever_key)		
