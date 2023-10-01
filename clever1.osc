@@ -209,7 +209,7 @@
 			0 (M.V.GetDepotStringGlobal) $+						
 			"\" $+ 
 			(L.L.clever_stop) (M.V.GetTTBusstopName) $+
-			"ARRIVE.wav" $+ 
+			".wav" $+ 
 			$msg (T.F.ev_EFAD_ansage)
 		{endif}		
 	
