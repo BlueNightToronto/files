@@ -830,13 +830,11 @@
 								{if}
 									(L.L.clever_run_active)
 									{if}
-										(L.L.ext_announce_seq) 3 =
+										(L.L.clever_LED)
 										{if}
-											(L.L.clever_LED)
-												{if}
-												{else}
-													5 (S.L.clever_LED_mode)
-												{endif}
+										{else}
+											5 (S.L.clever_LED_mode)
+											{endif}
 										{else}
 											2 (S.L.clever_LED_mode)
 										{endif}
