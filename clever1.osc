@@ -205,12 +205,6 @@
 
 	(L.L.clever_screen) 4 =
 		{if}
-			"..\..\Announcements\" 
-			0 (M.V.GetDepotStringGlobal) $+						
-			"\" $+ 
-			(L.L.clever_stop) (M.V.GetTTBusstopName) $+
-			".wav" $+ 
-			$msg (T.F.ev_EFAD_ansage)
 		{endif}		
 	
 	(L.L.clever_screen) 9 =
