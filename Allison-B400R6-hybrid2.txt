@@ -50,19 +50,19 @@ Torque converting gears are excluded.
 
 [const]
 sperrwirkung_g1_fest
-0.6
+1
 
 [const]
 sperrwirkung_g2_fest
-0.7
+1
 
 [const]
 sperrwirkung_g3_fest
-0.8
+0.9
 
 [const]
 sperrwirkung_g4_fest
-0.9
+1
 
 [const]
 sperrwirkung_g5_fest
