@@ -75,18 +75,7 @@ sperrwirkung_g6_fest
 Schaltkraftglättung
 Smooth shifts.
 ###############################
-[newcurve]
-shift_smoothing
-
-[pnt]
-0
-0.8
-
-[pnt]
-2
-1
-
-[newcurve]
+[oldcurve]
 downshift_smoothing
 
 [pnt]
@@ -96,6 +85,17 @@ downshift_smoothing
 [pnt]
 2
 1
+
+[newcurve]
+upshift_smoothing
+
+[pnt]
+0
+0.8
+
+[pnt]
+1
+2
 
 ###############################
 Zeit für den Wechsel zwischen Retarder und Traktion.
