@@ -15,12 +15,11 @@ LBSS_enabled
 ###############################
 Legt fest, welche Gänge hydrodynamisch arbeiten.
 How many gears work as a torque converter.
-2 Minimum
 ###############################
 
 [const]
 wandler_gears
-2
+1
 
 ###############################
 Kickdownfunktion.
@@ -28,7 +27,7 @@ Kickdown feature.
 ###############################
 [const]
 kickdown_enable
-1
+0
 
 ###############################
 Aktiviert eine Drehmomentsperre in den ausgewählten Gängen, um Schlupf im Getriebe sowie Rädern zu verhindern.
@@ -36,10 +35,10 @@ Dies ist absolut nötig bei Motoren mit hohen Drehmomenten.
 This activates a torque limiter to prevent slipping gears/wheels.
 This is necessary, if the engine has a high amount of torque.
 ###############################
-1= Ein; 0= Aus
+1= Yes; 0= No
 [const]
 engine_drehmomentsperre
-1
+0
 
 ###############################
 Hier wird festgelegt, wie stark die Sperre greifen soll. 0 - 1 (0% - 100% vom Eingangsdrehmoment)
